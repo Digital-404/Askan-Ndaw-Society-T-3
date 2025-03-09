@@ -19,7 +19,8 @@ html {
 
 ////////////////
 
-.the_info {
+.the_info,
+.the_info-2 {
   position: absolute;
   @include cent();
   background-color: #f1f1f1;
@@ -52,6 +53,10 @@ html {
   }
 }
 
+.the_info-2 {
+  left: 2%;
+}
+
 .the_info_active {
   ion-icon {
     opacity: 0;
@@ -62,7 +67,8 @@ html {
   }
 }
 
-.the_description {
+.the_description,
+.the_description-video {
   position: absolute;
   bottom: -200%;
   right: 2%;
@@ -99,7 +105,9 @@ html {
     }
   }
 }
-
+.the_description-video {
+  left: 2%;
+}
 ////////////////
 
 .hover_loader_container {
@@ -244,6 +252,7 @@ html {
   background-repeat: no-repeat;
   background-size: 100%;
   -webkit-user-select: none;
+  display: none;
 
   &:hover {
     transform: scale(1.1);
@@ -261,10 +270,16 @@ html {
       transform: translate(0%, 0.5%);
     }
   }
-  .the_description {
-    // background-color: #222;
-    width: 80vw;
+
+  .the_info-2 {
+    right: 20%;
   }
+  .the_description,
+  .the_description-video {
+    // background-color: #222;
+    width: 85vw;
+  }
+
   .a-enter-vr {
     // background-image: url("./Images/PNG/VR-icon.png");
     // display: flex;
